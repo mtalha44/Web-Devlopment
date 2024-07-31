@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <script src="https://kit.fontawesome.com/11b6b9f3e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/utils.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form action="" id="form" >
+            <div class="amount m-t">
+                <p>Enter amount</p>
+                <input type="text" value="100">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                       <div class="img">
+                           
+                           <img src="https://flagsapi.com/US/flat/64.png">
+                       </div>
+                        <select name="from" id="slector">
+                            <option value="USD">USD</option>
+                            <option value="PKR">PKR</option>
+                            <option value="Riyal">Riyal</option>
+                            <option value="INR">INR</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!-- <div class="icon">
+
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/PK/flat/64.png">
+                        <select name="from" id="">
+                            <option value="PKR" selected>PKR</option>
+                            <option value="USD">USD</option>
+                            <option value="Riyal">Riyal</option>
+                            <option value="INR">INR</option>
+                        </select>
+                    </div>
+                </div> -->
+            </div>
+            <div class="msg">1USD = 300PKR</div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+</body>
+</html>
