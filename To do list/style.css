@@ -1,0 +1,117 @@
+*{
+    margin: 0%;
+    font-family:'popins',"sans-serif";
+    box-sizing: border-box;
+}
+.container-fluid{
+    width: 100%;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.todo-app{
+    width: 70vh;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+}
+.todo-app img{
+    height: 40px;
+    width: 40px;
+}
+.app-name{
+    width: 100%;
+}
+button{
+   background-color: rgb(255, 120, 71);
+   color: white;
+   width: 30%;
+   border: none;
+}
+button:focus{
+    outline: none;
+}
+.input-box{
+    width: 70%;
+    height: 8vh;
+    border: none;
+    padding-left: 25px;
+    color: black;
+}
+input:focus{
+    outline: none;
+}
+.list-container{
+    font-size: larger;
+    margin-top: 20px;
+}
+ul li{
+    list-style: none;
+    font-size: larger;
+    padding: 10px 0px 0px 45px;
+    user-select: none;
+    cursor: pointer;
+    transform:translateX(-22px);
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left:0px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:#edeef0;
+}
+@media (max-width: 576px) {
+    .todo-app{
+        width: 50vh;
+    }
+    .input-box {
+        width: 70%;
+    }
+
+    .add-btn {
+        width: 30%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 700px) {
+    .todo-app{
+        width: 60vh;
+    }
+    .input-box {
+        width: 70%;
+    }
+
+    .add-btn {
+        width: 30%;
+    }
+}
