@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    font-family: 'popins','sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+}
+.container{
+    background: #345563;
+    margin:30vh auto;
+    width: 60vh;
+    height: 25vh;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: larger;
+}
+.password-input{
+    width: 100%;
+    height: 2.0em;
+    font-size: larger;
+    border: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}
