@@ -92,6 +92,7 @@ function getData(data,nextData)
         
 //     })
 // })
+
 console.log("geting data 1...")
 getData(7)
     .then((res)=>{
