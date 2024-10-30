@@ -12,8 +12,9 @@ import './App.css'
 // import Project from './Project'
 
 // import { LiftStateUp } from './Components/LiftStateUp'
+// import ToDo from './Components/todoProject/ToDoList'
 
-import ToDo from './Components/todoProject/ToDoList'
+import Scicuit from './Components/shortCircuitEvaluation/Scircuit'
 
 const  App = () => {
   return (
@@ -21,15 +22,13 @@ const  App = () => {
         {/* <LearnState/>
         <Sibling/> */}
         {/* <States /> */}
-
         {/* <DerivedStates/> */}
-
         {/* <Project/> */}
-
         {/* <LiftStateUp/> */}
+        {/* <ToDo/> */}
 
-        <ToDo/>
-
+        <Scicuit/>
+        
     </>
   )
 }

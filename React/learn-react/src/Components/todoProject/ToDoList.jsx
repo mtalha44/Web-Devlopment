@@ -3,18 +3,12 @@ import { ToDoForm } from "./ToDoForm";
 import { ToDoTask } from "./ToDoTask";
 import { ToDoDateTime } from "./ToDoDateTime";
 
-import { useState , useEffect } from "react";
-import { getlocalStorage , settodolocalStorage } from "./ToDoStorage";
+
+import { useState } from "react";
 
 const ToDo = () =>{ 
-
-    
-    const [task , setTask] = useState([]);
-
-    useEffect(() => {
-      const initialTasks = getlocalStorage();
-      setTask(initialTasks); // Set state once we have access to localStorage data
-  }, []);
+  
+  const [task , setTask] = useState([]);
 
     const handleFormSubmit = (inputValue) =>{
         const { id, content , checked } = inputValue;
@@ -29,9 +23,8 @@ const ToDo = () =>{
 
         setTask((prev) => [ ...prev, { id , content , checked } ] );
     }
-
-
-      settodolocalStorage(task);
+        // to store data in local storage
+        localStorage.setItem("todo",JSON.stringify(task));
 
     const DeleteLi = (value) =>{
             const update = task.filter((cur) => cur.content != value );
