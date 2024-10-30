@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(138, 138, 160);
+}
+.todoList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vh;
+    margin: auto;
+}
+.date-time{
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+}
+.heading{
+    color: white;
+    font-size:2.2rem;
+    text-align: center;
+}
+.addTask{
+    width: 50vh;
+    height: 7vh;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 10vh;
+}
+#taskField{
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 70%;
+    padding: 15px;
+    font-size: large;
+}
+#taskField:focus{
+    outline: none;
+    border: none;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vh;
+    height: 7vh;
+    margin-bottom:5vh ;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    
+    padding: 7px 5px 0px 15px;
+}
+span{
+    background-color: white;
+    flex-grow: 0.6;
+
+}
+
+.addTaskBtn{
+    background-color:rgb(49, 233, 224) ;
+    color: white;
+    height: 102%;
+    width: 30%;
+}
+.tickIcon{
+    background-color: white;
+    color: rgb(49, 233, 224);
+    cursor: pointer;
+    font-size: xx-large;
+}
+.tickIcon:hover{
+    fill: black;
+}
+.deleteIcon{
+    cursor: pointer;
+    background-color: white;
+    font-size: xx-large;
+}
+.deleteIcon:hover{
+    fill: red;
+}
+.clearBtn{
+    background-color: red;
+    font-size: larger;
+    height: 2.8rem;
+    width: 6.0rem;
+    border-radius: 12px;
+    color: white;
+}
+.clearBtn:hover{
+    background-color: rgb(187, 39, 39);
+}
+.checklist{
+    text-decoration-line: line-through;
+}
+.notChecklist{
+    text-decoration-line:none ;
+}

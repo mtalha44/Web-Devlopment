@@ -8,8 +8,12 @@ import './App.css'
 // import LearnState from './Components/hooks/State'
 // import { States } from './Components/hooks/State'
 
-import {DerivedStates} from './Components/DerivedStates'
-import Project from './Project'
+// import {DerivedStates} from './Components/DerivedStates'
+// import Project from './Project'
+
+// import { LiftStateUp } from './Components/LiftStateUp'
+
+import ToDo from './Components/todoProject/ToDoList'
 
 const  App = () => {
   return (
@@ -20,7 +24,11 @@ const  App = () => {
 
         {/* <DerivedStates/> */}
 
-        <Project/>
+        {/* <Project/> */}
+
+        {/* <LiftStateUp/> */}
+
+        <ToDo/>
 
     </>
   )
