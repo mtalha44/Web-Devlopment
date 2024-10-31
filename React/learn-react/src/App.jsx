@@ -14,7 +14,8 @@ import './App.css'
 // import { LiftStateUp } from './Components/LiftStateUp'
 // import ToDo from './Components/todoProject/ToDoList'
 
-import Scicuit from './Components/shortCircuitEvaluation/Scircuit'
+// import Scicuit from './Components/shortCircuitEvaluation/Scircuit'
+import Challenge from "./Components/hooks/UseStateChallenge"
 
 const  App = () => {
   return (
@@ -26,8 +27,9 @@ const  App = () => {
         {/* <Project/> */}
         {/* <LiftStateUp/> */}
         {/* <ToDo/> */}
-
-        <Scicuit/>
+        {/* <Scicuit/> */}
+        
+        <Challenge/>
         
     </>
   )
