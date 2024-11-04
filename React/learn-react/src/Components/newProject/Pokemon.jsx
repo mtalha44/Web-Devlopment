@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { PokeComp } from "./PokeComp";
-// import "./Poke.css"
 
 export const Pokemon = ()  =>{
 
@@ -47,24 +46,40 @@ useEffect(()=>{
           FetchPokemon();      
 },[])
 
+    //search functionality
+    const [ searchData , setSearch ] = useState("");
+
+    const allsearchedData = Array.isArray(pokeData) ? pokeData.filter(curPoke => 
+        curPoke.name.toLowerCase().includes(searchData.toLowerCase())
+    ) : [];
+      
+
+    //handling loading state
     if(loadData){
         return <li>Loading...</li>
     }
+    //handling error state
     if(error){
         return <h1>{error.message}</h1>
     }
     return (
         <>
-            <section className="container bg-teal-600 m-auto">
+        <section className="flex flex-col gap-[2rem] ">
+            <section className="flex flex-col justify-between justify-center items-center ">
+                <header> <h1 className="text-4xl m-[1rem]"> Lets Catch Pokemon Card </h1> </header>
+                <input type="search" name="" id="" placeholder="Search Your Favourite Pokemon" onChange={(e) => setSearch(e.target.value)} value={searchData} className=" w-[16rem] rounded-lg h-[2.3rem] pl-[12px] border border-gray-500 focus:border-black focus:outline-none"/>
+            </section>
+            <section className="container bg-teal-600 m-auto py-[2rem] rounded-lg">
                 <ul className="flex flex-row flex-wrap justify-around gap-[2rem]">
                     {
-                        pokeData.map((curData)=>{
+                        allsearchedData.map((curData)=>{
 
                             return <PokeComp key={curData.id} PokeData={curData} />;
                             
                         })
                     }
                 </ul>
+            </section>
             </section>
         </>
 

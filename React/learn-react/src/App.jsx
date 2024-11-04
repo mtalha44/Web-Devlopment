@@ -3,7 +3,9 @@
 // import viteLogo from '/vite.svg'
 
 import './App.css'
-import { Pokemon } from './Components/newProject/Pokemon'
+import { UseForwardHook } from './Components/hooks/UseForwardHook'
+// import { UseRefHook } from './Components/hooks/UseRef'
+// import { Pokemon } from './Components/newProject/Pokemon'
 
 // import { AsyncFetchPoke } from './Components/hooks/FetchUsingAsync'
 // import Challenge from './Components/hooks/Effect'
@@ -48,10 +50,10 @@ const  App = () => {
         {/* <NotFetch/> */}
         {/* <FetchPoke/> */}
         {/* <AsyncFetchPoke/> */}
+        {/* <Pokemon/> */}
+          {/* <UseRefHook/> */}
 
-        <Pokemon/>
-
-
+          <UseForwardHook/>
     </>
   )
 }
