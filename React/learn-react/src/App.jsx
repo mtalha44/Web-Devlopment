@@ -6,6 +6,7 @@ import './App.css'
 import { Pokemon } from './Components/newProject/Pokemon'
 
 // import { AsyncFetchPoke } from './Components/hooks/FetchUsingAsync'
+// import Challenge from './Components/hooks/Effect'
 // import UseEffectCleanUp from './Components/hooks/EffectChallenge'
 // import { NotFetch } from './Components/hooks/HowDontFetch'
 // import LoginForm from './Components/project/LoginForm'
