@@ -3,6 +3,12 @@
 // import viteLogo from '/vite.svg'
 
 import './App.css'
+import { Pokemon } from './Components/newProject/Pokemon'
+
+// import { AsyncFetchPoke } from './Components/hooks/FetchUsingAsync'
+// import UseEffectCleanUp from './Components/hooks/EffectChallenge'
+// import { NotFetch } from './Components/hooks/HowDontFetch'
+// import LoginForm from './Components/project/LoginForm'
 
 // import { Sibling } from './Components/hooks/State'
 // import LearnState from './Components/hooks/State'
@@ -15,7 +21,11 @@ import './App.css'
 // import ToDo from './Components/todoProject/ToDoList'
 
 // import Scicuit from './Components/shortCircuitEvaluation/Scircuit'
-import Challenge from "./Components/hooks/UseStateChallenge"
+// import Challenge from "./Components/hooks/UseStateChallenge"
+// import SignUpForm from './Components/project/SignUpForm'
+// import ContactForm from './Components/project/ContactForm'
+// import { FetchPoke } from './Components/hooks/PokemonCard'
+
 
 const  App = () => {
   return (
@@ -28,9 +38,19 @@ const  App = () => {
         {/* <LiftStateUp/> */}
         {/* <ToDo/> */}
         {/* <Scicuit/> */}
-        
-        <Challenge/>
-        
+        {/* <Challenge/> */}
+        {/* <SignUpForm/> */}
+        {/* <LoginForm/> */}
+        {/* <ContactForm/> */}
+        {/* <Challenge/> */}
+        {/* <UseEffectCleanUp/> */}
+        {/* <NotFetch/> */}
+        {/* <FetchPoke/> */}
+        {/* <AsyncFetchPoke/> */}
+
+        <Pokemon/>
+
+
     </>
   )
 }
