@@ -3,7 +3,14 @@
 // import viteLogo from '/vite.svg'
 
 import './App.css'
-import { UseForwardHook } from './Components/hooks/UseForwardHook'
+import { CompProvider } from './Components/hooks/UseContextApi'
+// import Practice from './Components/Practice'
+
+import { Home } from './Components/hooks/Consumer'
+
+// import { UseIdHook } from './Components/hooks/UseIdHook'
+
+// import { UseForwardHook } from './Components/hooks/UseForwardHook'
 // import { UseRefHook } from './Components/hooks/UseRef'
 // import { Pokemon } from './Components/newProject/Pokemon'
 
@@ -51,9 +58,15 @@ const  App = () => {
         {/* <FetchPoke/> */}
         {/* <AsyncFetchPoke/> */}
         {/* <Pokemon/> */}
-          {/* <UseRefHook/> */}
+        {/* <UseRefHook/> */}
+        {/* <UseForwardHook/> */}
+        {/* <UseIdHook/> */}
+        {/* <Practice/> */}
 
-          <UseForwardHook/>
+          <CompProvider>
+            <Home/>
+          </CompProvider>
+        
     </>
   )
 }
