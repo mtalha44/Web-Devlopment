@@ -3,10 +3,12 @@
 // import viteLogo from '/vite.svg'
 
 import './App.css'
-import { CompProvider } from './Components/hooks/UseContextApi'
+import { DarkModeComp, DarkModeProvider } from './Components/DarkMode/DarkMode'
+// import { CompProvider } from './Components/hooks/UseContextApi'
 // import Practice from './Components/Practice'
 
-import { Home } from './Components/hooks/Consumer'
+// import { Home } from './Components/hooks/Consumer'
+// import { UseReducerComp } from './Components/hooks/UseReducer'
 
 // import { UseIdHook } from './Components/hooks/UseIdHook'
 
@@ -62,11 +64,14 @@ const  App = () => {
         {/* <UseForwardHook/> */}
         {/* <UseIdHook/> */}
         {/* <Practice/> */}
-
-          <CompProvider>
+          {/* <CompProvider>
             <Home/>
-          </CompProvider>
-        
+          </CompProvider> */}
+        {/* <UseReducerComp/> */}
+
+        <DarkModeProvider>
+           <DarkModeComp/>  
+        </DarkModeProvider>    
     </>
   )
 }
