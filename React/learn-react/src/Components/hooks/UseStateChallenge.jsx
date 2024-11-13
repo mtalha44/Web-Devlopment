@@ -1,7 +1,7 @@
 import { useState } from "react";
 
+const [count,setCount] = useState(0);
 const Challenge = () => {
-        const [count,setCount] = useState(0);
         const [inputValue,setValue] = useState(1);
         const changeeHandler =(value) =>{
             setValue(value)

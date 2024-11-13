@@ -3,12 +3,14 @@
 // import viteLogo from '/vite.svg'
 
 import './App.css'
-import { DarkModeComp, DarkModeProvider } from './Components/DarkMode/DarkMode'
+import { UseMemoComp } from './Components/ReactPart2/memo/Usememo'
+// import { DarkModeComp, DarkModeProvider } from './Components/DarkMode/DarkMode'
+// import { ReactMemo } from './Components/ReactPart2/memo/ReactMemo'
 // import { CompProvider } from './Components/hooks/UseContextApi'
 // import Practice from './Components/Practice'
 
 // import { Home } from './Components/hooks/Consumer'
-// import { UseReducerComp } from './Components/hooks/UseReducer'
+import { UseReducerComp } from './Components/hooks/UseReducer'
 
 // import { UseIdHook } from './Components/hooks/UseIdHook'
 
@@ -67,11 +69,14 @@ const  App = () => {
           {/* <CompProvider>
             <Home/>
           </CompProvider> */}
-        {/* <UseReducerComp/> */}
+        <UseReducerComp/>
 
-        <DarkModeProvider>
+        {/* <DarkModeProvider>
            <DarkModeComp/>  
-        </DarkModeProvider>    
+        </DarkModeProvider>     */}
+
+        {/* <ReactMemo/> */}
+          {/* <UseMemoComp/> */}
     </>
   )
 }

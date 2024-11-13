@@ -3,10 +3,10 @@ import { useReducer } from "react"
 
 export const UseReducerComp =  () =>{
     
-    const reducer =  ( state , type ) =>{
+    const reducer =  ( state , action ) =>{
         if( action.type == "Increament" ){
             return state + 1;
-        }
+        } 
         else{
             return state - 1;
         }
@@ -26,3 +26,4 @@ export const UseReducerComp =  () =>{
         </>
     )
 }
+
