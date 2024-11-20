@@ -3,14 +3,14 @@
 // import viteLogo from '/vite.svg'
 
 import './App.css'
-import { UseMemoComp } from './Components/ReactPart2/memo/Usememo'
+// import { UseMemoComp } from './Components/ReactPart2/memo/Usememo'
 // import { DarkModeComp, DarkModeProvider } from './Components/DarkMode/DarkMode'
 // import { ReactMemo } from './Components/ReactPart2/memo/ReactMemo'
 // import { CompProvider } from './Components/hooks/UseContextApi'
 // import Practice from './Components/Practice'
 
 // import { Home } from './Components/hooks/Consumer'
-import { UseReducerComp } from './Components/hooks/UseReducer'
+// import { UseReducerComp } from './Components/hooks/UseReducer'
 
 // import { UseIdHook } from './Components/hooks/UseIdHook'
 
@@ -39,7 +39,7 @@ import { UseReducerComp } from './Components/hooks/UseReducer'
 // import SignUpForm from './Components/project/SignUpForm'
 // import ContactForm from './Components/project/ContactForm'
 // import { FetchPoke } from './Components/hooks/PokemonCard'
-
+import Practice from './Components/Practice'
 
 const  App = () => {
   return (
@@ -65,11 +65,11 @@ const  App = () => {
         {/* <UseRefHook/> */}
         {/* <UseForwardHook/> */}
         {/* <UseIdHook/> */}
-        {/* <Practice/> */}
+        <Practice/>
           {/* <CompProvider>
             <Home/>
           </CompProvider> */}
-        <UseReducerComp/>
+        {/* <UseReducerComp/> */}
 
         {/* <DarkModeProvider>
            <DarkModeComp/>  
