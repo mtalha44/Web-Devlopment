@@ -32,14 +32,14 @@ import './App.css'
 // import Project from './Project'
 
 // import { LiftStateUp } from './Components/LiftStateUp'
-// import ToDo from './Components/todoProject/ToDoList'
+import ToDo from './Components/todoProject/ToDoList'
 
 // import Scicuit from './Components/shortCircuitEvaluation/Scircuit'
 // import Challenge from "./Components/hooks/UseStateChallenge"
 // import SignUpForm from './Components/project/SignUpForm'
 // import ContactForm from './Components/project/ContactForm'
 // import { FetchPoke } from './Components/hooks/PokemonCard'
-import Practice from './Components/Practice'
+// import Practice from './Components/Practice'
 
 const  App = () => {
   return (
@@ -50,7 +50,7 @@ const  App = () => {
         {/* <DerivedStates/> */}
         {/* <Project/> */}
         {/* <LiftStateUp/> */}
-        {/* <ToDo/> */}
+        <ToDo/>
         {/* <Scicuit/> */}
         {/* <Challenge/> */}
         {/* <SignUpForm/> */}
@@ -65,7 +65,7 @@ const  App = () => {
         {/* <UseRefHook/> */}
         {/* <UseForwardHook/> */}
         {/* <UseIdHook/> */}
-        <Practice/>
+        {/* <Practice/> */}
           {/* <CompProvider>
             <Home/>
           </CompProvider> */}

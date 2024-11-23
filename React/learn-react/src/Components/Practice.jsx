@@ -139,39 +139,40 @@ import { Children } from "react"
 //   )
 // }
 
-import { useState } from "react"
-export default function Practice(){
-  const [ index , setindex ] = useState(0)
-  return (
-        <>
-          <Panel 
-              title = "About"
-              isActive = { index === 0 }
-              show = {() => setindex(0) }
-          >
-            I'm Talha I studying at Govt Science College. I'm actively in 5th semester amd maintaining 3.5 cgpa.  
-          </Panel>
-          <Panel 
-              title = "Expenses"
-              isActive = { index === 1 }
-              show = { () => setindex(1) }
-          >
-            My house is almost 50 lakh. My college fee is almost 20 thousand . My monthly expenses is almost 3000 rs.
-          </Panel>
+// import { useState } from "react"
+// export default function Practice(){
+//   const [ index , setindex ] = useState(0)
+//   return (
+//         <>
+//           <Panel 
+//               title = "About"
+//               isActive = { index === 0 }
+//               show = {() => setindex(0) }
+//           >
+//             I'm Talha I studying at Govt Science College. I'm actively in 5th semester amd maintaining 3.5 cgpa.  
+//           </Panel>
+//           <Panel 
+//               title = "Expenses"
+//               isActive = { index === 1 }
+//               show = { () => setindex(1) }
+//           >
+//             My house is almost 50 lakh. My college fee is almost 20 thousand . My monthly expenses is almost 3000 rs.
+//           </Panel>
 
-        </>
-      )
-}
+//         </>
+//       )
+// }
 
-const Panel =  ({ title , isActive , show , children }) =>{
+// const Panel =  ({ title , isActive , show , children }) =>{
       
-  return (
-    <>
-      <h1 className="text-3xl">{title}</h1>
-      { 
-        isActive ? <p>{children}</p> : <button onClick={show} className="bg-blue-400 p-[5px] text-white rounded">Show me</button>
-      }
-    </>
+//   return (
+//     <>
+//       <h1 className="text-3xl">{title}</h1>
+//       { 
+//         isActive ? <p>{children}</p> : <button onClick={show} className="bg-blue-400 p-[5px] text-white rounded">Show me</button>
+//       }
+//     </>
 
-  )
-}
+//   )
+// }
+

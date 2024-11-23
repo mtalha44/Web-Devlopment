@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <!-- To Get and display task: -->
+    <input type="text" id="task" name="number">
+    <div class="taskcontent"></div>
+    <button onclick="Print()">Print</button>
+    
+    <!-- Count total paragraph -->
+    <div>
+        <p name="para">Talha</p>
+        <p name="para">Talha</p>
+        <p name="para">Talha</p>
+    </div>
+    <button onclick="Count()">Count</button>
+
+    <button onclick="App()">Perform Task</button>
+
+    <!-- Form Validation -->
+    <form onsubmit="formValid()">
+        Email : <input type="text" name="email" id="email">
+        Password : <input type="password" name="password" id="password">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Adding internal Javascript to HTML -->
+    <script type="text/javascript">
+    function App(){
+        var v= confirm( " Are you sure ");
+        if( v == true){
+            alert("Next Task");
+        }
+        else{
+            alert("Previous Pending");
+        }
+    }
+    </script>
+
+    <!-- For Events Handling -->
+    <div id="mouseover" onmouseover="MouseOver()">
+        <h3>Siblings</h3>
+        <input type="text" id="subheading" onkeypress="Keypress()">
+        <h4 ondblclick="DoubleClick()" id="h4heading" >Siblings</h4>
+        <h5>Siblings</h5>
+        <input type="text" id="eventcheck" onfocus="FuncFocus()">
+    </div>
+
+    <!-- Try Catch Practice -->
+    <div class="trycatch"></div>
+
+
+
+    <!-- //Adding External Javascript to HTML -->
+    <script src="/index.js"></script>
+
+</body>
+</html>
