@@ -4,5 +4,5 @@ export const About = () =>{
 
     // const {name}  = use(BioContext);
 
-    return <h1>About</h1>
+    return <div className="section1">About</div>
 }
