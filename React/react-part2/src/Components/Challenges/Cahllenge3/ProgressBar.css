@@ -1,0 +1,23 @@
+.progress-bar {
+    height: 1rem;
+    width: 25rem;
+    background-color: grey;
+    overflow: hidden; /* Ensure content stays within bounds */
+    position: relative; /* To position the loading bar inside */
+}
+
+.loading {
+    height: 100%; /* Match the height of the progress bar */
+    width: 0; /* Start with 0 width */
+    background-color: red;
+    animation: progress-bar 3s linear forwards; /* Use shorthand */
+}
+
+@keyframes progress-bar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
